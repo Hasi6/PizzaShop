@@ -1,0 +1,48 @@
+.track img {
+    width: 72px;
+}
+
+.main {
+    display: flex;
+    margin: 0 20px;
+    height: 115px;
+    ;
+}
+
+.SignAndTrack {
+    margin-top: 20px;
+}
+
+.pizzahut {
+    margin: 0 auto;
+}
+
+.pizzahut img {
+    margin-top: -90px;
+}
+
+.freedelivery img {
+    width: 100px;
+    margin-top: 13px;
+}
+
+#navbarNav {
+    background: black;
+}
+
+#navbarNav ul {
+    margin: auto;
+}
+
+#navbarNav ul li {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#navbarNav ul li:hover {
+    background: white;
+}
+
+.mySlides {
+    display: none;
+}
