@@ -67,6 +67,7 @@ img {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    background: black;
 }
 
 
@@ -179,4 +180,8 @@ img {
     .text {
         font-size: 11px
     }
+}
+
+.card {
+    margin: 10px 0;
 }
