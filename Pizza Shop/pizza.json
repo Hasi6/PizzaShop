@@ -1,30 +1,36 @@
 [{
-        "Name": "regular",
-        "Size": "any",
-        "Price": "Hasi",
-        "Images": "https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg"
+        "Name": "Cheese Lovers",
+        "description": "Rich tomato sauce with a triple layer of mozzarella cheese.",
+        "Price": "599.00",
+        "Images": "https://adminsc.pizzahut.lk/images/mainmenu/cheeselovers8af791bb96d1465aa31f4cb22d642068.jpg"
     }, {
-        "Name": "as",
-        "Size": "any",
-        "Price": "Hasi",
-        "Images": "https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg"
+        "Name": "Chicken Hawaiian",
+        "description": "Chicken ham & pineapple with a double layer of mozzarella cheese.",
+        "Price": "1099.00",
+        "Images": "https://adminsc.pizzahut.lk/images/mainmenu/chickenhawaiiana1998da14add4d788c937c8f87b68518.jpg"
     },
     {
-        "Name": "as",
-        "Size": "any",
-        "Price": "Hasi",
-        "Images": "https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg"
+        "Name": "Devilled Chicken",
+        "description": "Devilled chicken in spicy sauce with a double layer of mozzarella cheese.",
+        "Price": "1099.00",
+        "Images": "https://adminsc.pizzahut.lk/images/mainmenu/devilledchickenbbc60b21e5d845da8c992780e0a35d62.jpg"
     },
     {
-        "Name": "as",
-        "Size": "any",
-        "Price": "Hasi",
-        "Images": "https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg"
+        "Name": "Veggie Supreme",
+        "description": "Mushrooms, tomatoes, onions, black olives and bell peppers with a double layer of mozzarella cheese.",
+        "Price": "510.00",
+        "Images": "https://adminsc.pizzahut.lk/images/mainmenu/veggiesupreme0a6fe2bfa0174696b4b5b9a9c425497e.jpg"
     },
     {
-        "Name": "as",
-        "Size": "any",
-        "Price": "Hasi",
-        "Images": "https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg"
+        "Name": "Sausage Delight",
+        "description": "Chicken sausages & onions with a double layer of mozzarella cheese.",
+        "Price": "999.00",
+        "Images": "https://adminsc.pizzahut.lk/images/mainmenu/sausagedelight215a65620c394005a3730121f69ebe64.jpg"
+    },
+    {
+        "Name": "Tandoori Chicken",
+        "description": "Tandoori chicken & onions with a double layer of mozzarella cheese.",
+        "Price": "1099.00",
+        "Images": "https://adminsc.pizzahut.lk/images/mainmenu/tandoorichicken6e230d2bdcfa48f6ba332fb92025556a.jpg"
     }
 ]

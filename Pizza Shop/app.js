@@ -40,11 +40,9 @@ document.getElementById('sign').addEventListener('click', sign);
 
 document.getElementById('promo').addEventListener('click', promo);
 document.getElementById('pizza').addEventListener('click', pizza);
-document.getElementById('pasta').addEventListener('click', promo);
-document.getElementById('sides').addEventListener('click', pizza);
-document.getElementById('beverages').addEventListener('click', promo);
-document.getElementById('findahut').addEventListener('click', pizza);
-document.getElementById('coupons').addEventListener('click', pizza);
+document.getElementById('pasta').addEventListener('click', pasta);
+document.getElementById('sides').addEventListener('click', sides);
+document.getElementById('beverages').addEventListener('click', beverages);
 // End of Event Listners
 
 // Create log in Function
@@ -247,19 +245,19 @@ function pizza(e) {
     xhr.onload = function() {
         if (this.status === 200) {
 
-            const customers = JSON.parse(this.responseText);
+            const pizzas = JSON.parse(this.responseText);
 
             let output = '';
 
-            customers.forEach(function(customers) {
+            pizzas.forEach(function(pizza) {
                 output += `
-                <div class="card col-md-4" style="width: 18rem;">
-                <img class="card-img-top" src="${customers.Images}">            
+                <div class="card col-md-4 text-center" style="width: 18rem;">
+                <img class="card-img-top" src="${pizza.Images}">            
                 <div class="card-body">
-                        <h3 class="card-title">${customers.Name}</h3>
-                        <h5 class="card-title">${customers.Price}</h5>
-                        <p class="card-text">${customers.Size}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h3 class="card-title">${pizza.Name}</h3>
+                        <p class="card-text">${pizza.description}</p>
+                        <h5 class="card-title"><i class="fas fa-tags"></i>${pizza.Price}</h5>
+                        <a href="#" class="btn btn-info">Order Now</a>
                     </div>
                     </div>`;
             });
@@ -274,10 +272,10 @@ function pizza(e) {
     // e.preventDefault();
 }
 
-pizza();
+promo();
 
 
-
+// promo Foods
 function promo(e) {
     const xhr = new XMLHttpRequest();
 
@@ -292,13 +290,50 @@ function promo(e) {
 
             customers.forEach(function(customers) {
                 output += `
-                <div class="card col-md-4" style="width: 18rem;">
+                <div class="card col-md-4 text-center" style="width: 18rem;">
                 <img class="card-img-top" src="${customers.Images}">            
                 <div class="card-body">
+                        <span class='btn btn-success'>Promo <i class="fas fa-percentage"></i></span>
                         <h3 class="card-title">${customers.Name}</h3>
+                        <p class="card-text">${customers.description}</p>
                         <h5 class="card-title">${customers.Price}</h5>
-                        <p class="card-text">${customers.Size}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    </div>`;
+            });
+
+
+            document.getElementById('hasi').innerHTML = output;
+
+        }
+    }
+
+    xhr.send();
+    e.preventDefault();
+}
+
+// pasta Foods
+function pasta(e) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', './pasta.json', true);
+
+    xhr.onload = function() {
+        if (this.status === 200) {
+
+            const pastas = JSON.parse(this.responseText);
+
+            let output = '';
+
+            pastas.forEach(function(pasta) {
+                output += `
+                <div class="card col-md-4 text-center" style="width: 18rem;">
+                <img class="card-img-top" src="${pasta.Images}">            
+                <div class="card-body">
+                        <h3 class="card-title">${pasta.Name}</h3>
+                        <p class="card-text">${pasta.description}</p>
+                        <h5 class="card-title"><i class="fas fa-tags"></i>${pasta.Price}</h5>
+                        <a href="#" class="btn btn-primary">Order Now</a>
                     </div>
                     </div>`;
             });
